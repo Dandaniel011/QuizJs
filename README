@@ -1,0 +1,7 @@
+Once you dowload the code type:
+npm init 
+to creacte package.json 
+and install the dependencie:
+express
+if you want to run the code in localhost by typing:
+node server.js  

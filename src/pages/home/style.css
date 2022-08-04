@@ -1,0 +1,156 @@
+:root {
+    --color-gray-800: #222;
+    --color-gray-900: #111;
+
+    --color-green-100: #09ff00;
+    --color-green-200: #07c400;
+
+    --color-red-100: #ff0f0f;
+    --color-red-200: #dd0f0f;
+
+    --color-primary-100: #4a169e;
+    --color-primary-300: #3c1280;
+    --color-primary-900: #270b53;
+
+    --color-sencodary-50: #ff0;
+    --color-sencodary-300: #ebeb29;
+}
+
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.flex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--color-primary-300);
+}
+
+#pageTittle {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+h1 {
+    font-size: 1rem;
+    color: var(--color-sencodary-300);
+    font-weight: 700;
+    margin: 1rem;
+}
+
+p {
+    font-weight: 400;
+}
+
+input {
+    background-color: var(--color-sencodary-50);
+    border-radius: 1rem;
+    color: var(--color-primary-300);
+    font-weight: 500;
+    opacity: 0.7;
+    font-size: 4rem;
+    border: var(--color-gray-800) solid .2rem;
+}
+
+main {
+    background-color: var(--color-primary-100);
+    flex: 1;
+}
+
+.inicialTittle {
+    font-size: 5rem;
+}
+
+.startButton {
+    width: 40rem;
+    height: 8rem;
+}
+
+.question-title {
+    font-size: 2rem;
+}
+
+.question-img {
+    width: 25%;
+}
+
+.question_result {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.green-text {
+    color: var(--color-green-200)
+}
+
+.red-text {
+    color: var(--color-red-200)
+}
+
+.options {
+    display: grid;
+    grid-template-areas: "a b""c d";
+    margin: 1.5rem;
+    margin-top: 0;
+    gap: 1rem;
+    width: 50%;
+    height: 6rem;
+}
+
+input:hover:not(.disabled) {
+    opacity: 1;
+    cursor: pointer;
+    border: var(--color-gray-900) solid .2rem;
+}
+
+.correct {
+    background-color: var(--color-green-100);
+    opacity: 1;
+}
+
+.incorrect {
+    background-color: var(--color-red-100);
+    opacity: 1;
+}
+
+.next {
+    width: 25%;
+    height: 2.5rem;
+}
+
+#final-tittle {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+#final-subtittle {
+    font-size: 3rem;
+}
+
+strong {
+    font-weight: 900;
+}
+
+footer {
+    background-color: var(--color-primary-900);
+    height: 1.2rem;
+}
+
+footer p {
+    color: var(--color-sencodary-300);
+    font-size: .8rem;
+}
